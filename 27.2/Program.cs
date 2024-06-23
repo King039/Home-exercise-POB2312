@@ -12,25 +12,25 @@ class BankAccount
     public void Deposit(double amount)
     {
         balance += amount;
-        Console.WriteLine("Deposit successful. New balance: " + balance);
+        Console.WriteLine("Пополнение счета прошло успешно. Пополнение баланса: " + balance);
     }
 
     public void Withdraw(double amount)
     {
         if (amount > balance)
         {
-            Console.WriteLine("Insufficient funds. Withdrawal failed.");
+            Console.WriteLine("Недостаточно средств. Вывод средств не удался. ");
         }
         else
         {
             balance -= amount;
-            Console.WriteLine("Withdrawal successful. New balance: " + balance);
+            Console.WriteLine("Вывод средств прошел успешно. Пополнение баланса: " + balance);
         }
     }
 
     public void CheckBalance()
     {
-        Console.WriteLine("Current balance: " + balance);
+        Console.WriteLine("Текущий баланс: " + balance);
     }
 }
 
