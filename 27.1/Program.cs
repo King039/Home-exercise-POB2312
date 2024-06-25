@@ -4,25 +4,25 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Укажите количество рублей: ");
-        decimal roubles = decimal.Parse(Console.ReadLine());
+        decimal roubles = decimal.Parse(Console.ReadLine()!);
 
         decimal roublesToTenge = RubleConverter.ToTenge(roubles);
-        Console.WriteLine($"В тенге: {roubles}");
+        Console.WriteLine($"В тенге: {roublesToTenge}");
 
         decimal roublesToDollars = RubleConverter.ToDollars(roubles);
-        Console.WriteLine($"В долларах США: {roubles}");
+        Console.WriteLine($"В долларах США: {roublesToDollars}");
 
         decimal roublesToEuros = RubleConverter.ToEuros(roubles);
-        Console.WriteLine($"В евро: {roubles}");
+        Console.WriteLine($"В евро: {roublesToEuros}");
 
         decimal roublesToZlotys = RubleConverter.ToZlotys(roubles);
-        Console.WriteLine($"В злотах: {roubles}");
+        Console.WriteLine($"В злотах: {roublesToZlotys}");
 
         decimal roublesToYuan = RubleConverter.ToYuan(roubles);
-        Console.WriteLine($"В юань: {roubles}");
+        Console.WriteLine($"В юань: {roublesToYuan}");
 
         decimal roublesToRupes = RubleConverter.ToRupes(roubles);
-        Console.WriteLine($"В рупий: {roubles}");
+        Console.WriteLine($"В рупий: {roublesToRupes}");
     }
 }
 
